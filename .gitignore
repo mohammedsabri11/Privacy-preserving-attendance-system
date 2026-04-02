@@ -1,0 +1,81 @@
+# ========================
+# Python / Backend
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+venv/
+env/
+.venv/
+*.db
+*.sqlite3
+backend/attendance.db
+backend/static/stego_images/*
+!backend/static/stego_images/.gitkeep
+
+# ========================
+# Node.js / Frontend
+# ========================
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# ========================
+# Environment / Secrets
+# ========================
+.env
+.env.local
+.env.production
+!.env.example
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Desktop.ini
+ehthumbs.db
+
+# ========================
+# Docker
+# ========================
+docker-compose.override.yml
+*.log
+
+# ========================
+# Claude Code
+# ========================
+.claude/
+
+# ========================
+# Test / Temp
+# ========================
+test_face.jpg
+test_face_real.jpg
+*.tmp
+*.temp
+coverage/
+.nyc_output/
+
+# ========================
+# PyTorch model cache
+# ========================
+*.pt
+*.pth
+torch_home/
