@@ -52,7 +52,7 @@ async def lifespan(app: FastAPI):
 
     # Create default encryption key if none exists
     async with AsyncSessionLocal() as session:
-        result = await session.execute(select(EncryptionKey))
+        result = await session.execute(select(EncryptionKey).limit(1))
         if result.scalar_one_or_none() is None:
             key = EncryptionKey(
                 name="Default Key",
